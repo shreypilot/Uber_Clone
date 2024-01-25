@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet,View} from 'react-native'
+import HomeScreen from './src/screens/HomeScreen'
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello UberClone</Text>
+    <View style = {styles.container}>
+       <HomeScreen />
     </View>
   )
 }

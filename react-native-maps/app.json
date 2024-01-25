@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Uber_Clone",
-    "slug": "Uber_Clone",
+    "name": "react-native-maps",
+    "slug": "react-native-maps",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,24 +15,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier":"com.uberclone",
-      "config":{
-        "googleMapsApiKey" :"KEY"
-      }
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package":"com.uberclone",
-      "config" :{
-        "googleMaps":{
-          "apiKey":""
-        },
-        "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
-      }  
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
