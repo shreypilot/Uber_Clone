@@ -10,3 +10,6 @@ src->
 
 
   SCREEN_WIDTH->get it from the dimensions api from react native dimensions object get dot get call this method and this will be window myth  we re goona from the windows object  and get the width and should be the width of ur screen
+
+
+ headerShown: false in the options for a screen within a StackNavigator means that the navigation header (the bar at the top of the screen containing the title and sometimes buttons) will not be displayed for that specific screen. This is often used when you want to have a screen without any navigation header, or if you want to implement a custom header or handle navigation differently for that screen.
