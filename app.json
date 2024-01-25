@@ -28,8 +28,8 @@
       },
       "package":"com.uberclone",
       "config" :{
-        "googleMaps":{
-          "apiKey":""
+        "googleMaps": {
+          "apiKey":"apiKey"
         },
         "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
       }  
