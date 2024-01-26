@@ -23,15 +23,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
       "package":"com.uberclone",
       "config" :{
         "googleMaps": {
-          "apiKey":"apiKey"
-        },
-        "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
+          "apiKey":"AIzaSyBFdTQcykGkxPoH2Ss1fZvN7Iv5KfxuhZI"
+        }
       }  
     },
     "web": {

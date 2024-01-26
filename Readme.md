@@ -13,3 +13,6 @@ src->
 
 
  headerShown: false in the options for a screen within a StackNavigator means that the navigation header (the bar at the top of the screen containing the title and sometimes buttons) will not be displayed for that specific screen. This is often used when you want to have a screen without any navigation header, or if you want to implement a custom header or handle navigation differently for that screen.
+
+
+ ->I am creating Map component using class component because map will have a lot of functionalities and we will be rendering thethe direction onon thi s map and all this direction have different state so when  u hv so many stateful component it is easier to use lass component 

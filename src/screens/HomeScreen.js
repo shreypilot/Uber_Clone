@@ -8,9 +8,10 @@ import {
   ScrollView,
   Image,
   FlatList,
+  TouchableOpacity,
 } from "react-native";
 import { Icon } from "react-native-elements";
-import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import * as Location from "expo-location";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -18,7 +19,7 @@ import { colors, parameters } from "../global/styles";
 import { filterData, carsAround } from "../global/data";
 import { mapStyle } from "../global/mapStyle";
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const [latlng, setLatLng] = useState({});
 
   const checkPermission = async () => {
@@ -74,9 +75,15 @@ const HomeScreen = () => {
               <Text style={styles.text2}>
                 Read a book.Take a nap. Stare out the window
               </Text>
-              <View style={styles.button1}>
-                <Text style={styles.button1Text}>Ride with Uber</Text>
-              </View>
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate("RequestScreen", { state: 0 });
+                }}
+              >
+                <View style={styles.button1}>
+                  <Text style={styles.button1Text}>Ride with Uber</Text>
+                </View>
+              </TouchableOpacity>
             </View>
             <View>
               <Image
@@ -208,8 +215,6 @@ const HomeScreen = () => {
               </Marker>
             ))}
           </MapView>
-
-
         </View>
       </ScrollView>
       <StatusBar style="light" backgroundColor="#2058c0" translucent={true} />
