@@ -16,9 +16,9 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier":"com.uberclone",
-      "config":{
-        "googleMapsApiKey" :"KEY"
+      "bundleIdentifier": "com.uberclone",
+      "config": {
+        "googleMapsApiKey": "KEY"
       }
     },
     "android": {
@@ -26,15 +26,20 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package":"com.uberclone",
-      "config" :{
+      "package": "com.uberclone",
+      "config": {
         "googleMaps": {
-          "apiKey":"KEY"
+          "apiKey": "KEY"
         }
-      }  
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ab007388-7530-43ae-8345-9d654ba397e0"
+      }
     }
   }
 }
